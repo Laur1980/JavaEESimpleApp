@@ -13,8 +13,8 @@ public class BookService {
 	@Inject @ThirteenDigits
 	private NumberGenerator numberGenerator;
 	
-	public Book createBook(String title, Double price, String description){
-		Book book = new Book(title,description,price,numberGenerator.generateNumber());
+	public Book createBook(String title,  String description,Double price,Integer numberOfPages,String email){
+		Book book = new Book(title,description,price,numberGenerator.generateNumber(),numberOfPages,email);
 		return book;
 	}
 	

@@ -1,4 +1,4 @@
-package org.javaee.tutorial;
+package org.javaee.tutorial.test;
 
 
 import static org.junit.Assert.assertTrue;
@@ -25,8 +25,8 @@ public class AppTest
 	public void shouldCheckNumberIsMock(){
 		WeldContainer container = weld.initialize();
 		BookService bs = container.instance().select(BookService.class).get();
-		Book book = bs.createBook("Title 2", 35.5, "iada iada iada iada iada iada iada");
-		assertTrue(book.getNumber().startsWith("MOCK"));
+		Book book = bs.createBook("Title 2", "iada iada iada iada iada iada iada",35.5, 235,"vasile@gmail.com");
+		assertTrue(book.getIsbn().startsWith("MOCK"));
 	}
 	
 	@After

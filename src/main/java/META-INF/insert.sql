@@ -1,4 +1,4 @@
 
-INSERT INTO book(book_id, title, description, ILLUSTRATIONS, ISBN, NBOFPAGE, PRICE) values (1000, 'Beginning Java EE 6', 'Best Java EE book ever', 1, '1234-5678', 450, 49);
-INSERT INTO book(book_id, title, description, ILLUSTRATIONS, price, NBOFPAGE, PRICE) values (1001, 'Beginning Java EE 7', 'No, this is the best ', 1, '5678-9012', 550, 53);
-INSERT INTO book(book_id, title, description, ILLUSTRATIONS, ISBN, NBOFPAGE, PRICE) values (1010, 'The Lord of the Rings', 'One ring to rule them all', 0, '9012-3456', 222, 23);
+INSERT INTO book(book_id, title, description, price, isbn, number_of_pages,email) values (NULL, 'Beginning Java EE 6', 'Best Java EE book ever', 49, '1234-5678', 450,"beginning.java.ee.6@author.com");
+INSERT INTO book(book_id, title, description, price, isbn, number_of_pages,email) values (NULL, 'Beginning Java EE 7', 'No, this is the best ', 53, '5678-9012', 550,"beginning.java.ee.6@author.com");
+INSERT INTO book(book_id, title, description, price, isbn, number_of_pages,email) values (NULL, 'The Lord of the Rings', 'One ring to rule them all', 230, '9012-3456', 2220,"beginning.java.ee.6@author.com");
